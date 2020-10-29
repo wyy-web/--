@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+index ---index ---lists
+<!--变量用大括号-->
+{$person['name']}
+<ul>
+<!--    循环，name后面是数据，id后面是数组元素-->
+    {volist name="skill" id="item"}
+<!--    渲染数组-->
+    <li>{$item}</li>
+    {/volist}
+    <ul>
+        {volist name="student" id="item"}
+        <li>{$item.names} {$item.age}</li>
+    </ul>
+</ul>
+</body>
+</html>
